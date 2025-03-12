@@ -18,5 +18,5 @@ Technologies Used:
 -  Next.js
 -  React
 -  Node.js
--  
+  
 This project is a work in progress.
