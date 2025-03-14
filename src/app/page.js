@@ -3,13 +3,16 @@
   viewport: "width=device-width, initial-scale=1.0",
 };*/
 
+import { IoMenuOutline } from "react-icons/io5";
+import { LuMenu } from "react-icons/lu";
+
 export default function Home() {
   return (
-      <div className="bg-[rgba(17,17,17,1)] h-screen w-full p-0 pt-5">
+      <div className="bg-[rgba(17,17,17,1)] w-full p-0 pt-5">
         <NavBar />
         <HeroSection />
         <BlogIntro />
-        <h1>Featured Articles</h1>
+        <FeaturedArticles />
       </div>
     );
 }
@@ -20,11 +23,14 @@ function NavBar() {
       <div className="flex-1 flex justify-left">
         <Logo />
       </div>
-      <div className="flex-1 flex justify-center">
+      <div className="hidden flex-1 flex justify-center md:flex">
         <Navigation />
       </div>
-      <div className="flex-1 flex justify-end">
+      <div className="hidden flex-1 flex justify-end md:flex">
         <Search />      
+      </div>
+      <div className="text-4xl">
+        <LuMenu /> 
       </div>
     </nav>
   );
@@ -46,8 +52,6 @@ function Navigation(){
         <li>About</li>
         <li>Contact</li>
       </ol>
-    
-
   );
 }
 
@@ -68,10 +72,9 @@ function Search(){
 
 function HeroSection() {
   return(
-    <div className="flex flex-col justify-between items-center h-[80%]">
-      <h2 className="m-5 text-center text-2xl font-mono p-5 mt-20">Coding/Technology/Development</h2>
-      <h1 className="m-5 text-center text-8xl font-mono p-5">Refactored Thoughts</h1>
-      <h3 className="m-5 text-center text-xl font-mono p-5 mb-20">A blog by George Lilley</h3>
+    <div className="flex flex-col items-center">
+      <h1 className="text-3xl m-5 text-left font-mono p-5">Refactored Thoughts</h1>
+      <h2 className="text-l text-center font-mono pl-5 ml-5 pr-5 mr-5"><em>A Coding/Technology/Development Blog</em></h2>
     </div>
     
   );
@@ -79,10 +82,25 @@ function HeroSection() {
 
 function BlogIntro(){
   return(
-    <h1>
-      Here, I’ll explore everything from deep dives into technical topics to wide-ranging philosophical reflections on the future and technology. I’ve always believed that writing down thoughts is powerful—innovators and professionals do it to clarify ideas and spark new ones. For me, this blog is a way to practice, grow, and share my perspective on the fast-moving world of tech.
-    </h1>
+    <>
+      <hr className="mt-5"></hr>
+      <p className="text-xs m-5 p-5 pt-0 pb-0 font-mono text-justify">
+        Welcome to my blog! Here, I’ll explore everything from in-depth technical topics to broader philosophical musings on technology. This blog serves as both a learning tool and a place to share my journey as a software engineer. I’m building it with React and other modern web technologies—putting my skills into practice while reflecting on the ever-evolving world of tech. - George Lilley
+      </p>
+    </>
   );
 }
 
+function FeaturedArticles(){
+  return(
+    <>
+      <hr className="mt-5"></hr>
+      <h1 className="text-l m-5 p-5 pt-0 pb-0 font-mono text-center">
+        Featured Articles
+      </h1>
+      <div className="h-50 border rounded-xl m-3 p-3">Feature 1</div>
+      <div className="h-50 border rounded-xl m-3 p-3">Feature 2</div>
+    </>
+  )
+}
 
