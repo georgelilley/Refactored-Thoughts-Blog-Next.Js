@@ -12,7 +12,7 @@ Getting Started:
 -  Clone the repository.
 -  Run npm install to install dependencies.
 -  Use npm run dev to start the development server.
--  Visit http://localhost:3000 in your browser.
+-  Visit http://localhost:3000, http://localhost:3000/about, http://localhost:3000/blogs, http://localhost:3000/contact in your browser.
 
 Technologies Used:
 -  Next.js
