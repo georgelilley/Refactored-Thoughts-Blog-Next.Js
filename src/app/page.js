@@ -8,8 +8,7 @@ import { LuMenu } from "react-icons/lu";
 
 export default function Home() {
   return (
-      <div className="bg-[rgba(17,17,17,1)] w-full p-0 pt-5">
-        <NavBar />
+      <div className="">
         <HeroSection />
         <BlogIntro />
         <FeaturedArticles />
@@ -73,7 +72,7 @@ function Search(){
 function HeroSection() {
   return(
     <div className="flex flex-col items-center">
-      <h1 className="text-3xl m-5 text-left font-mono p-5">Refactored Thoughts</h1>
+      <h1 className="text-3xl m-5 text-left font-mono p-5 mt-0">Refactored Thoughts</h1>
       <h2 className="text-l text-center font-mono pl-5 ml-5 pr-5 mr-5"><em>A Coding/Technology/Development Blog</em></h2>
     </div>
     
