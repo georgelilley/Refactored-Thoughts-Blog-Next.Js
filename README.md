@@ -2,13 +2,13 @@
 
 This project is a Next.js and TailwindCSS React web application currently under development, designed to power my personal blog site. The goal is to explore Next.js features like server-side rendering (SSR) and static site generation (SSG) to build a fast, SEO-friendly blog. Eventually, this will serve as a flexible foundation for creating scalable, high-performance web applications.
 
-Features to Be Added:
+## Features to Be Added:
 -  Server-Side Rendering (SSR) for faster load times and better SEO.
 -  Static Site Generation (SSG) to enhance performance.
 -  Built with React for dynamic, interactive user interfaces.
 -  A clean, extendable structure for future growth and customization.
   
-Getting Started:
+## Getting Started:
 
   Clone the repository:
 
@@ -42,9 +42,10 @@ Visit the app in your browser: Open the following URLs in your browser:
 
     http://localhost:3000/contact
 
-Technologies Used:
+## Technologies Used:
 -  Next.js
 -  React
 -  Node.js
+-  MongoDB
   
 This project is a work in progress.
