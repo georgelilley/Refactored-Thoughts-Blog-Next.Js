@@ -10,15 +10,15 @@ This project is a Next.js and TailwindCSS React web application currently under 
   
 ## Getting Started:
 
-  Clone the repository:
+  ### Clone the repository:
 
     git clone <repository-url>
 
-Install dependencies: Run the following command to install the required dependencies:
+### Install dependencies: Run the following command to install the required dependencies:
 
     npm install
 
-Set up MongoDB:
+### Set up MongoDB:
 
 -  Ensure you have a MongoDB database set up. You can use MongoDB Atlas for a cloud database or run MongoDB locally.
 
@@ -26,11 +26,11 @@ Set up MongoDB:
 
         MONGODB_URI=mongodb://<your-mongo-connection-string>
 
-Start the development server: Run the following command to start the development server:
+### Start the development server: Run the following command to start the development server:
 
     npm run dev
 
-Visit the app in your browser: Open the following URLs in your browser:
+### Visit the app in your browser: Open the following URLs in your browser:
 
     http://localhost:3000
 
