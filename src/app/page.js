@@ -3,17 +3,18 @@
   viewport: "width=device-width, initial-scale=1.0",
 };*/
 
+import { fetchBlog } from "lib/fetchBlog";
 import { IoMenuOutline } from "react-icons/io5";
 import { LuMenu } from "react-icons/lu";
 
-export default function Home() {
-  return (
-      <div className="">
-        <HeroSection />
-        <BlogIntro />
-        <FeaturedArticles />
-      </div>
-    );
+export default async function Home() {
+  return(
+    <div className="">
+      <HeroSection />
+      <BlogIntro />
+      <FeaturedArticles />
+    </div>
+  )
 }
 
 function NavBar() {
